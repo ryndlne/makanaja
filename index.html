@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ff7a1a">
+  <meta name="description" content="MakanAja — makanan enak, praktis, dan terjangkau. Lapar? MakanAja.">
+  <title>MakanAja — Lapar? MakanAja.</title>
+  <link rel="icon" type="image/png" href="assets/makanaja-app-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement"><span>🍊</span> Makan enak nggak harus ribet <span class="announcement-dot">•</span> <strong>Lapar? MakanAja.</strong></div>
+  <header class="site-header">
+    <a class="brand" href="#beranda" aria-label="MakanAja beranda"><img src="assets/makanaja-logo.png" alt="MakanAja"></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" id="mainNav">
+      <a href="#beranda" class="nav-link active">Beranda</a>
+      <a href="#menu" class="nav-link">Menu Favorit</a>
+      <a href="#tentang" class="nav-link">Tentang Kami</a>
+      <a href="#kontak" class="nav-link">Kontak</a>
+      <a class="nav-order" href="#menu">Pesan Sekarang <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="beranda">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> TEMAN MAKAN SEHARI-HARI</div>
+        <h1>Lagi lapar?<br><span>MakanAja.</span></h1>
+        <p class="hero-description">Nggak perlu bingung mau makan apa. Temukan makanan favoritmu yang enak, praktis, dan ramah di kantong.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#menu">Lihat Menu <span>→</span></a>
+          <a class="button button-quiet" href="#tentang"><span class="play-icon">▶</span> Kenalan yuk</a>
+        </div>
+        <div class="hero-social-proof">
+          <div class="avatar-stack"><span>😊</span><span>😋</span><span>🥰</span></div>
+          <div><strong>Teman makan kamu</strong><small>untuk hari yang lebih nikmat</small></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-orange-blob"></div>
+        <div class="hero-food-card">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1000&q=85" alt="Hidangan segar penuh warna">
+          <div class="floating-note note-top"><span class="note-emoji">✨</span><div><strong>Enak banget!</strong><small>Bikin mood naik</small></div></div>
+          <div class="floating-note note-bottom"><span class="note-emoji">🧡</span><div><strong>Dibuat dengan hati</strong><small>Untuk momen makanmu</small></div></div>
+        </div>
+        <div class="hero-sticker">ENAK<br><span>&</span><br>GAMPANG!</div>
+        <span class="sparkle sparkle-one">✳</span><span class="sparkle sparkle-two">✦</span>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="benefit"><span class="benefit-icon">😋</span><div><strong>Rasa bikin senang</strong><small>Menu yang menggugah selera</small></div></div>
+      <div class="benefit"><span class="benefit-icon">⚡</span><div><strong>Praktis tanpa drama</strong><small>Pesan makanan jadi mudah</small></div></div>
+      <div class="benefit"><span class="benefit-icon">🧡</span><div><strong>Ramah di kantong</strong><small>Enak dinikmati setiap hari</small></div></div>
+    </section>
+
+    <section class="menu-section section-wrap" id="menu">
+      <div class="section-heading">
+        <div><div class="eyebrow">PILIHAN BUAT KAMU</div><h2>Menu yang bikin<br><span>hari makin seru.</span></h2></div>
+        <p>Kalau perut mulai kasih kode, waktunya pilih menu favorit. Ada banyak alasan buat makan enak hari ini!</p>
+      </div>
+      <div class="menu-filters" role="group" aria-label="Filter menu">
+        <button class="filter active" data-filter="all">Semua menu</button>
+        <button class="filter" data-filter="berat">Makanan berat</button>
+        <button class="filter" data-filter="ringan">Camilan</button>
+        <button class="filter" data-filter="minum">Minuman</button>
+      </div>
+      <div class="menu-grid">
+        <article class="food-card" data-category="berat">
+          <div class="food-image"><img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=85" alt="Nasi dengan lauk dan sayuran"><span class="food-tag">Favorit</span><button class="heart" aria-label="Sukai menu">♡</button></div>
+          <div class="food-info"><div class="food-meta"><span>MAKANAN BERAT</span><span>★ 4.9</span></div><h3>Nasi Ayam Spesial</h3><p>Menu mengenyangkan untuk isi ulang energi.</p><div class="food-bottom"><strong>Rp 25.000</strong><button class="add-button" data-item="Nasi Ayam Spesial">+</button></div></div>
+        </article>
+        <article class="food-card" data-category="berat">
+          <div class="food-image"><img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=85" alt="Mangkuk mi hangat"><span class="food-tag tag-peach">Hangat & nikmat</span><button class="heart" aria-label="Sukai menu">♡</button></div>
+          <div class="food-info"><div class="food-meta"><span>MAKANAN BERAT</span><span>★ 4.8</span></div><h3>Mi Kuah Hangat</h3><p>Teman nyaman buat hari yang panjang.</p><div class="food-bottom"><strong>Rp 18.000</strong><button class="add-button" data-item="Mi Kuah Hangat">+</button></div></div>
+        </article>
+        <article class="food-card" data-category="ringan">
+          <div class="food-image"><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=800&q=85" alt="Kentang goreng renyah"><span class="food-tag tag-yellow">Teman santai</span><button class="heart" aria-label="Sukai menu">♡</button></div>
+          <div class="food-info"><div class="food-meta"><span>CAMILAN</span><span>★ 4.7</span></div><h3>Kentang Renyah</h3><p>Camilan seru buat nemenin aktivitasmu.</p><div class="food-bottom"><strong>Rp 12.000</strong><button class="add-button" data-item="Kentang Renyah">+</button></div></div>
+        </article>
+        <article class="food-card" data-category="minum">
+          <div class="food-image"><img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=85" alt="Minuman dingin dengan es"><span class="food-tag tag-peach">Segar!</span><button class="heart" aria-label="Sukai menu">♡</button></div>
+          <div class="food-info"><div class="food-meta"><span>MINUMAN</span><span>★ 4.8</span></div><h3>Es Kopi Susu</h3><p>Segarnya pas buat temani kesibukan.</p><div class="food-bottom"><strong>Rp 15.000</strong><button class="add-button" data-item="Es Kopi Susu">+</button></div></div>
+        </article>
+      </div>
+      <p class="menu-disclaimer">*Menu, foto, harga, dan rating di halaman ini merupakan contoh tampilan dan dapat disesuaikan dengan produk MakanAja yang sebenarnya.</p>
+    </section>
+
+    <section class="about-section" id="tentang">
+      <div class="about-visual"><div class="about-image-wrap"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=85" alt="Makanan segar tersaji di meja"></div><div class="about-sticker"><span>🧡</span><strong>Simple food,<br>happy mood.</strong></div></div>
+      <div class="about-copy"><div class="eyebrow">CERITA MAKANAJA</div><h2>Makan enak<br>nggak harus <span>ribet.</span></h2><p>Kami percaya, momen makan seharusnya jadi hal yang menyenangkan. Karena itu, MakanAja hadir untuk menemani keseharianmu dengan pilihan makanan yang praktis, enak, dan tetap ramah di kantong.</p><p>Sesederhana namanya, MakanAja ingin jadi teman yang selalu bisa kamu andalkan saat lapar datang.</p><a class="text-link" href="#kontak">Yuk, kenalan lebih dekat <span>→</span></a></div>
+    </section>
+
+    <section class="cta-section section-wrap" id="kontak">
+      <div class="cta-card"><div class="cta-doodle">✳</div><div><div class="eyebrow eyebrow-light">JANGAN BIARKAN PERUT MENUNGGU</div><h2>Sudah tahu mau makan apa?</h2><p>Yuk, jadikan waktu makanmu lebih menyenangkan bersama MakanAja.</p></div><a class="button button-white" href="#menu">Cari makanan <span>→</span></a><span class="cta-circle"></span></div>
+      <div class="contact-note"><span>💬</span><div><strong>Punya pertanyaan atau ingin bekerja sama?</strong><p>Hubungi tim MakanAja melalui kanal resmi brand kamu.</p></div><a href="mailto:halo@makanaja.id">halo@makanaja.id ↗</a></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-main"><a class="footer-brand" href="#beranda"><img src="assets/makanaja-logo.png" alt="MakanAja"></a><p>Kalau lapar dan nggak mau ribet,<br><strong>MakanAja.</strong></p><div class="footer-social"><a href="#kontak" aria-label="Instagram">ig</a><a href="#kontak" aria-label="TikTok">tk</a><a href="#kontak" aria-label="WhatsApp">wa</a></div></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> MakanAja. Dibuat dengan 🧡.</span><span>Enak • Praktis • Terjangkau</span></div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
